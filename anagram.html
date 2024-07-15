@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array anagram</title>
+
+    <script>
+       function areAnagrams(arr1, arr2) {
+            if (arr1.length !== arr2.length) {
+                return false;
+            }
+
+    let sortedArr1 = arr1.slice().sort();
+    let sortedArr2 = arr2.slice().sort();
+
+    for (let i = 0; i < sortedArr1.length; i++) {
+        if (sortedArr1[i] !== sortedArr2[i]) {
+            return false;
+        }
+    }
+    return true;
+    }
+
+        let arr1 = ['l', 'i', 's', 't', 'e', 'n'];
+        let arr2 = ['s', 'i', 'k', 'e', 'n', 't'];
+        console.log(areAnagrams(arr1, arr2));
+
+    </script>
+
+</head>
+<body>
+    <center>
+        <h1>array anagram</h1>
+        <hr>
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array anagram</title>
+
+    <script>
+      function removeAllOccurrences(arr, element) {
+       return arr.filter(function(item) {
+        return item !== element;
+        });
+        }
+
+
+                let array = [1, 2, 3, 4, 2, 5, 2, 6];
+                let elementToRemove = 4;
+
+                let newArray = removeAllOccurrences(array, elementToRemove);
+                console.log(newArray); 
+
+    </script>
+
+</head>
+<body>
+    <center>
+        <h1>array anagram</h1>
+        <hr>
+
+    </center>
+</body>
+</html>

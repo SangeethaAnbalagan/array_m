@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array rotation</title>
+
+    <script>
+        function leftRotate(arr, n) {
+            return 
+                arr.slice(n).concat(arr.slice(0, n));
+        }
+
+
+            let arr = [1, 2, 3, 4, 5];
+            let n = 1;
+            let rotatedArr = leftRotate(arr, n);
+            console.log(rotatedArr);
+
+
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Array rotation</h1>
+        <hr>
+
+    </center>
+</body>
+</html>
